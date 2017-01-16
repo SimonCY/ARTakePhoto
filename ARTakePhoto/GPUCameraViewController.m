@@ -49,10 +49,10 @@
     [self.view addSubview:view2];
     
 
-    GPUImageFilter *filter1 = [[GPUImageFilter alloc] initWithFragmentShaderFromFile:@"Shader1"];
+    GPUImageFilter *toonFilter = [[GPUImageFilter alloc] initWithFragmentShaderFromFile:@"Shader1"];
     GPUImageFilter *filter2 = [[GPUImageFilter alloc] initWithFragmentShaderFromFile:@"Shader2"];
     
-    GPUImageToonFilter *toonFilter = [[GPUImageToonFilter alloc] init];
+//    GPUImageToonFilter *toonFilter = [[GPUImageToonFilter alloc] init];
     
     [videoCamera addTarget:toonFilter];
     [toonFilter addTarget:view1];
